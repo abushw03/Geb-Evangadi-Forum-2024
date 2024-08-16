@@ -1,0 +1,40 @@
+.edit_qform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 25px auto;
+}
+
+.edit_qform input[type="text"], .edit_qform textarea {
+  background-color: white;
+  margin: 20px auto;
+  outline: none;
+  width: 100%;
+  max-width: 1800px; 
+  padding: 15px;
+  border: 0.3px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  color: rgb(2, 37, 83);
+  font-family: monospace;
+}
+
+.edit_qform textarea {
+  height: 250px;
+  resize: vertical;
+}
+
+.edit_qform button[type="submit"] {
+  background-color: #0053f9;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 200px;
+}
+
+.edit_qform button[type="submit"]:hover {
+  background-color: #0e43cb;
+}
