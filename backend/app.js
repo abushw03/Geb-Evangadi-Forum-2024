@@ -4,7 +4,7 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT;
 const cors = require("cors");
-
+app.use(cors());
 // Import routes
 const userRoutes = require("./routes/userRoute");
 const answerRoutes = require("./routes/answerRoute");
@@ -16,7 +16,7 @@ const questionRoutes = require("./routes/questionRoute");
 //   origin: "http://localhost:5173", // Replace with the allowed origin
 // };
 
-app.use(cors());
+
 
 
 //user routes middleware file
