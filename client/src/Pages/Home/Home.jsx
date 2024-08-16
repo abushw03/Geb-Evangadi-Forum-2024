@@ -77,7 +77,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="col-md-6 col-4 pt-2 welcome_message text-md-right text-center">
-            Welcome, <span>{user.username}</span>
+            Welcome: <span>{user.username}</span>
           </div>
         </div>
 
@@ -119,7 +119,7 @@ const Home = () => {
               </Link>
               {user.username === question.user_name && (
                 <div className="row mt-2">
-                  <div className="col-12 d-flex justify-content-end mb-5">
+                  <div className="col-12 d-flex justify-content-end mb-3">
                     <button
                       className="edit-question btn btn-link text-decoration-none"
                       onClick={() => editQuestionHandler(question.question_id)}
@@ -129,7 +129,7 @@ const Home = () => {
                   </div>
                 </div>
               )}
-              <hr className="mt-2" />
+              <hr />
             </div>
           ))}
         </div>
